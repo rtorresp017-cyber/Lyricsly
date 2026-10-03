@@ -3,10 +3,10 @@
 <form id="form"><input id="q" placeholder="Search songs or artists..."><button>Search</button></form><p id="status"></p><section id="results"></section>
 <section id="songView" class="hidden"><button id="back">← Back</button><div class="songhead"><img id="cover"><div><small>NOW PLAYING</small><h2 id="title"></h2><p id="artist"></p></div></div>
 <div class="tabs"><button class="tab active" data-tab="lyricsPane">Lyrics</button><button class="tab" data-tab="chordsPane">Guitar</button></div>
-<div id="lyricsPane" class="pane"><pre id="lyricsText">Loading lyrics…</pre></div>
-<div id="chordsPane" class="pane hidden">
-<div id="realTab" class="real-tab"><small>SONGSTERR TAB</small><h3 id="tabStatus">Checking for a real guitar tab…</h3><p id="tabMeta"></p><a id="tabLink" class="primary hidden" target="_blank" rel="noopener">Open Full Tab ↗</a></div>
-<div class="fallback"><small>QUICK PRACTICE</small><h3>Chord suggestions</h3><div class="tools"><label>Key <select id="keySelect"></select></label><button id="down">−½</button><button id="up">+½</button></div><div id="summary"></div><div id="diagrams"></div><p class="hint">These chord shapes are a practice fallback and are not claimed to be the official transcription.</p></div>
-</div></section>
+<div id="lyricsPane" class="pane">
+<div class="scrollbar"><button id="autoScroll">▶ Auto Scroll</button><label>Speed <input id="speed" type="range" min="1" max="10" value="4"></label><button id="top">↟ Top</button></div>
+<pre id="lyricsText">Loading lyrics…</pre></div>
+<div id="chordsPane" class="pane hidden"><div class="real-tab"><small>SONGSTERR TAB</small><h3>Real guitar tab search</h3><p id="tabMeta"></p><a id="tabLink" class="primary" target="_blank" rel="noopener">Open Full Tab ↗</a></div></div>
+</section>
 <div id="modal" class="modal hidden"><div class="card"><button id="close">×</button><h2>Support Lyricly ♡</h2><p>Donate through Zelle</p><strong>714-818-7485</strong><button id="copy">Copy Zelle number</button></div></div>
 </main><script src="app.js"></script></body></html>
